@@ -294,6 +294,15 @@ html {
 
 @media (min-width: 600px) {
 
+    .computer div {
+        justify-content: center;
+        width: 80%;
+    }
+
+    .computer article {
+        align-items: center;
+    }
+
     .services {
         padding-top: 5%;
     }
