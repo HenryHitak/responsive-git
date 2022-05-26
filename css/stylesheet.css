@@ -294,6 +294,32 @@ html {
 
 @media (min-width: 600px) {
 
+    .features {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .features > artilce {
+        justify-content: space-between;
+    }
+
+    .features > h2{
+        font-size: 36px;
+        padding-bottom: 2%;
+    }
+
+    .features h4{
+        font-size: 20px;
+    }
+
+    .features p {
+        font-size: 18px;
+    }
+
+    .features i{
+        font-size: 30px;
+    }
+
     .computer div {
         justify-content: center;
         width: 80%;
