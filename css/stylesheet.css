@@ -423,6 +423,42 @@ html {
     }
 }
 
-@media (min-width:1000px) {
-    
+@media (min-width: 1000px) {
+
+    .about > h2{
+        padding-bottom: 2%;
+    }
+
+    .about > div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 95%;
+        padding-top: 5%;
+    }
+
+    .about figure {
+        width: 30%;
+    }
+
+    .testimonials {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .testimonials > h1{
+        font-size: 50px;
+    }
+
+    .testimonials > p{
+        font-size: 30px;
+    }
+
+    .testimonials > i{
+        font-size: 28px;
+    }
+
+    footer [class^="fa-"] {
+        font-size: 30px;
+    }
 }
