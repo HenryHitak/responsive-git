@@ -292,4 +292,58 @@ html {
     
 }
 
+@media (min-width: 600px) {
+
+    .about {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .about > h2{
+        padding-bottom: 2%;
+    }
+
+
+    .about figcaption {
+        font-size: 30px;
+    }
+
+    .about p{
+        font-size: 24px;
+    }
+
+    .about div >figure {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .about img {
+        width:60%
+    }
+
+    .testimonials {
+        min-height: 20vh;
+    }
+
+    .testimonials > h2{
+        font-size: 36px;
+        padding-bottom: 2%;
+    }
+
+    
+    .testimonials p{
+        font-size: 20px;
+        padding-top: 3%;
+    }
+
+    footer > div, footer> span {
+        justify-content: center;
+        column-gap: 15px;
+    }
+
+    footer {
+        min-height: 15vh;
+    }
+}
+
 
