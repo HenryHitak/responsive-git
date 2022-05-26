@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap&#39');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap&#39;');
 
 * {
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: 'Nunito', sans-serif;
-}
-
 html {
     scroll-behavior: smooth;
 }
 
-@media (min-width:300px) {
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+@media (min-width: 300px) {
 
     header {
         display: flex;
@@ -24,18 +24,21 @@ html {
         padding: 5%;
     }
 
-    header article {
+    header > article {
         text-align: center;
     }
 
-    nav > ul {
-        display: none;
-    }
-
-    header article:nth-child(1) {
+    header > article:nth-child(1) {
         display: flex;
         justify-content: space-between;
         width: 80%;
+    }
+
+    header > article:nth-child(2) {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     summary {
@@ -58,17 +61,13 @@ html {
     details a {
         text-decoration: none;
         color: black;
-        background-color: whitesmoke;
         width: 100%;
-        padding: 3% 0% 3%;
+        background-color: whitesmoke;
+        padding: 5% 0 5%;
     }
 
-
-    header > article:nth-child(2) {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    nav > ul {
+        display: none;
     }
 
     .features {
@@ -79,12 +78,12 @@ html {
     }
 
     .features > h2 {
-        border-bottom:  1px solid cornflowerblue;
+        border-bottom: 1px solid cornflowerblue;
         width: fit-content;
         padding-bottom: 5%;
     }
 
-    .features > article  {
+    .features > article {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -92,10 +91,9 @@ html {
     }
 
     .features div {
-        width: 40%;
         padding: 3%;
+        width: 40%;
         text-align: center;
-
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -108,7 +106,7 @@ html {
     }
 
     .features p {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .computer {
@@ -117,8 +115,8 @@ html {
         align-items: center;
         row-gap: 30px;
         background-color: whitesmoke;
-        padding-top: 10%;
-        padding-bottom: 10%;
+        padding-top: 15%;
+        padding-bottom: 15%;
     }
 
     .computer > article {
@@ -132,7 +130,7 @@ html {
         width: 100%;
     }
 
-    .computer div{
+    .computer div {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -142,10 +140,10 @@ html {
     .computer i {
         color: whitesmoke;
         background-color: cornflowerblue;
-        font-size: 40px;
+        font-size: 36px;
         border-radius: 50%;
-        width: 10vh;
-        height: 10vh;
+        width: 70px;
+        height: 70px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -155,7 +153,7 @@ html {
         display: flex;
         flex-direction: column;
         row-gap: 15px;
-        width: 75%;
+        width: 80%;
     }
 
     .computer p {
@@ -169,29 +167,29 @@ html {
         padding: 10% 0% 10%;
     }
 
-    .services h3{
-        font-size: 16px;
-        padding: 10% 0% 10%;
-    }
-
     .services > h2 {
         width: 100%;
         text-align: center;
         padding: 10% 0% 10%;
     }
 
-    .services > article{
+    .services h3 {
+        font-size: 16px;
+        padding: 10% 0% 10%;
+    }
+
+    .services > article {
         width: 40%;
         text-align: center;
-        padding: 3%;
+        padding: 2%;
     }
 
     .services p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .services > article:nth-child(even) {
-        background-color: lightgray;
+        background-color: whitesmoke;
     }
 
     .services i {
@@ -204,36 +202,36 @@ html {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 5%;
+        padding: 10%;
     }
 
-    .call-action > p{
+    .call-action > p {
         padding-top: 10%;
     }
 
-    .about{
+    .about {
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
         padding: 20% 5%;
+        text-align: center;
     }
 
-    .about h2{
+    .about h2 {
         border-bottom: 1px solid cornflowerblue;
         width: fit-content;
         padding-bottom: 5%;
     }
 
-    .about div{
+    .about div {
         padding-top: 10%;
     }
 
-    .about div > figure{
-        padding: 5% 0%;
+    .about div > figure {
+        padding: 10%;
     }
 
-    .about p{
+    .about p {
         padding-top: 5%;
     }
 
@@ -241,21 +239,21 @@ html {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: cornflowerblue;
-        padding: 5%;
-        color: whitesmoke;
-        padding-top: 10%;
-        padding-bottom: 10%;
-        min-height: 35vh;
         justify-content: space-between;
+        background-color: cornflowerblue;
+        color: whitesmoke;
+        padding: 5%;
+        padding-bottom: 10%;
+        padding-top: 10%;
+        min-height: 35vh;
     }
 
-    .testimonials > h2{
-        border-bottom: 1px solid white;
+    .testimonials > h2 {
+        border-bottom: 1px solid whitesmoke;
         padding-bottom: 5%;
     }
 
-    .testimonials > p{
+    .testimonials > p {
         text-align: center;
     }
 
@@ -263,32 +261,27 @@ html {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 3%;
         min-height: 30vh;
         justify-content: center;
     }
 
-    footer > div, footer > span {
+    footer > div,
+    footer > span {
         width: 65%;
         display: flex;
         justify-content: space-between;
     }
-
-    /* 
-    ^= starts with
-    *= contains
-    $= ends with */
+    
     footer [class^="fa-"] {
         text-decoration: none;
         color: gray;
         font-size: 20px;
     }
 
-    footer a{
+    footer a {
         color: cornflowerblue;
         text-decoration: none;
     }
-    
 }
 
 @media (min-width: 600px) {
@@ -307,19 +300,24 @@ html {
 
     .features {
         padding-top: 5%;
-        padding-bottom: 5%;
+        padding-bottom: 3%;
     }
 
-    .features > artilce {
-        justify-content: space-between;
+    .features > article {
+        width: 80%;
+        justify-content: space-evenly;
     }
 
-    .features > h2{
+    .features > h2 {
         font-size: 36px;
         padding-bottom: 2%;
     }
 
-    .features h4{
+    .features i {
+        font-size: 36px;
+    }
+
+    .features h4 {
         font-size: 20px;
     }
 
@@ -327,46 +325,41 @@ html {
         font-size: 18px;
     }
 
-    .features i{
-        font-size: 30px;
+    .computer article {
+        align-items: center;
     }
 
     .computer div {
-        justify-content: center;
-        width: 80%;
-    }
-
-    .computer article {
-        align-items: center;
+        width: 70%;
     }
 
     .services {
         padding-top: 5%;
     }
 
-    .services h2 {
+    .services > h2 {
         font-size: 36px;
         padding-top: 1%;
-        padding-bottom: 1%;
+        padding-bottom: 3%;
     }
 
-    .services i{
+    .services i {
         font-size: 56px;
-    }
-
-    .services p{
-        font-size: 24px;
     }
 
     .services h3 {
         font-size: 26px;
     }
 
-    .call-action {
+    .services p {
+        font-size: 20px;
+    }
+
+    .call-action > h2 {
         font-size: 36px;
     }
 
-    .call-action > p{
+    .call-action > p {
         font-size: 24px;
     }
 
@@ -375,58 +368,119 @@ html {
         padding-bottom: 5%;
     }
 
-    .about > h2{
+    .about > h2 {
         padding-bottom: 2%;
         font-size: 36px;
     }
 
+    .about div > figure {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
 
     .about figcaption {
         font-size: 30px;
     }
 
-    .about p{
+    .about p {
         font-size: 24px;
     }
 
-    .about div >figure {
-        padding-top: 2%;
-        padding-bottom: 2%;
-    }
-
     .about img {
-        width:60%
+        width: 80%;
     }
 
     .testimonials {
-        min-height: 20vh;
+        min-height: 15vh;
     }
 
-    .testimonials > h2{
-        font-size: 36px;
+    .testimonials > h2 {
         padding-bottom: 2%;
+        font-size: 36px;
     }
 
-    
-    .testimonials p{
+    .testimonials > p {
         font-size: 20px;
-        padding-top: 3%;
-    }
-
-    footer > div, footer> span {
-        justify-content: center;
-        column-gap: 15px;
+        padding-top: 2%;
     }
 
     footer {
         min-height: 15vh;
     }
+
+    footer > div,
+    footer > span {
+        justify-content: center;
+        column-gap: 15px;
+    }
 }
 
 @media (min-width: 1000px) {
-    
-    .call-action > p{
-        padding-top: 3%;
+
+    header article:nth-child(1) {
+        
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    nav li {
+        list-style-type: none;
+        width: 100%;
+        display: flex;
+    }
+
+    nav a{
+        width: 100%;
+        text-decoration: none;
+        color: whitesmoke;
+    }
+
+    nav a:hover {
+        background-color: darkslateblue;
+    }
+
+    details {
+        display: none;
+    }
+
+    .features {
+        padding-bottom: 2%;
+    }
+
+    .features article{
+
+    }
+
+    .computer {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .computer > article {
+        padding: 1%;
+        width: 45%;
+    }
+
+    .computer > article:nth-child(2) {
+        align-items: flex-start;
+    }
+
+    .services > h2 {
+        width: 100%;
+        font-size: 50px;
+        padding-bottom: 2%;
+    }
+
+    .services > article {
+        width: 25%;
     }
 
     .call-action {
@@ -437,26 +491,30 @@ html {
         padding-bottom: 5%;
     }
 
-    .call-action > h2 {
-        border-bottom:  2px solid cornflowerblue;
+    .call-action > p {
+        padding-top: 3%;
+        width: 80%;
+        font-size: 28px;
     }
 
-    .testimonials > h2, .about > h2, .services > h2, .call-action > h2{
+    .about > h2, .call-action > h2, .feauteres > h2 {
+        width: fit-content;
+        border-bottom: 2px solid cornflowerblue;
         font-size: 50px;
         padding-bottom: 2%;
-        width: fit-content;
     }
 
-    .about > div{
+    .about > div {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
+        flex-direction: row;
         width: 95%;
         padding-top: 5%;
     }
 
-    .about figure {
+    .about div > figure {
         width: 30%;
+        padding: 0;
     }
 
     .testimonials {
@@ -464,19 +522,18 @@ html {
         padding-bottom: 5%;
     }
 
-    .testimonials > h1{
+    .testimonials > h2 {
+        width: fit-content;
+        border-bottom: 2px solid whitesmoke;
         font-size: 50px;
+        padding-bottom: 2%;
     }
 
-    .testimonials > p{
+    .testimonials > p {
         font-size: 30px;
-    }
-
-    .testimonials > i{
-        font-size: 28px;
     }
 
     footer [class^="fa-"] {
-        font-size: 30px;
+        font-size: 28px;
     }
 }
