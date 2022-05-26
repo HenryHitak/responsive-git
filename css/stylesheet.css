@@ -9,7 +9,195 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @media (min-width:300px) {
+
+    header {
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        background-color: cornflowerblue;
+        color: whitesmoke;
+        padding: 5%;
+    }
+
+    header article {
+        text-align: center;
+    }
+
+    nav > ul {
+        display: none;
+    }
+
+    header article:nth-child(1) {
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    summary {
+        font-size: 30px;
+    }
+
+    details > ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+    }
+
+    details li {
+        margin-left: -70%;
+        width: 100%;
+        list-style-type: none;
+        display: flex;
+    }
+
+    details a {
+        text-decoration: none;
+        color: black;
+        background-color: whitesmoke;
+        width: 100%;
+        padding: 3% 0% 3%;
+    }
+
+
+    header > article:nth-child(2) {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15% 0% 15%;
+    }
+
+    .features > h2 {
+        border-bottom:  1px solid cornflowerblue;
+        width: fit-content;
+        padding-bottom: 5%;
+    }
+
+    .features > article  {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 3%;
+    }
+
+    .features div {
+        width: 40%;
+        padding: 3%;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+
+    .features i {
+        color: cornflowerblue;
+        font-size: 25px;
+    }
+
+    .features p {
+        font-size: 20px;
+    }
+
+    .computer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+        background-color: whitesmoke;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .computer > article {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 2%;
+    }
+
+    .computer img {
+        width: 100%;
+    }
+
+    .computer div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 20px;
+    }
+
+    .computer i {
+        color: whitesmoke;
+        background-color: cornflowerblue;
+        font-size: 40px;
+        border-radius: 50%;
+        width: 10vh;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .computer aside {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+        width: 75%;
+    }
+
+    .computer p {
+        font-size: 14px;
+    }
+
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10% 0% 10%;
+    }
+
+    .services h3{
+        font-size: 16px;
+        padding: 10% 0% 10%;
+    }
+
+    .services > h2 {
+        width: 100%;
+        text-align: center;
+        padding: 10% 0% 10%;
+    }
+
+    .services > article{
+        width: 40%;
+        text-align: center;
+        padding: 3%;
+    }
+
+    .services p {
+        font-size: 16px;
+    }
+
+    .services > article:nth-child(even) {
+        background-color: lightgray;
+    }
+
+    .services i {
+        font-size: 36px;
+    }
 
     .call-action {
         text-align: center;
@@ -22,7 +210,6 @@ body {
 
     .call-action > p{
         padding-top: 10%;
-
     }
 
     .about{
