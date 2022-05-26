@@ -294,6 +294,28 @@ html {
 
 @media (min-width: 600px) {
 
+    .services {
+        padding-top: 5%;
+    }
+
+    .services h2 {
+        font-size: 36px;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    .services i{
+        font-size: 56px;
+    }
+
+    .services p{
+        font-size: 24px;
+    }
+
+    .services h3 {
+        font-size: 26px;
+    }
+
     .call-action {
         font-size: 36px;
     }
@@ -355,4 +377,6 @@ html {
     }
 }
 
+@media (min-width:1000px) {
 
+}
